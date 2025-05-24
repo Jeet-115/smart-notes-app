@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/notes";
+const BASE_URL = "https://smart-notes-app-vsea.onrender.com/api/notes";
 const getAuthHeaders = () => {
   const token = localStorage.getItem("token");
   return {
