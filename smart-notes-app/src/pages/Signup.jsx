@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -67,12 +67,9 @@ export default function Signup() {
         >
           Create Account
         </button>
-        <p className="text-sm text-center text-gray-600 dark:text-gray-300">
-          Already have an account?{" "}
-          <a href="/login" className="text-indigo-600 font-semibold">
-            Log in
-          </a>
-        </p>
+        <Link to="/login"><p className="text-sm text-center text-gray-600 dark:text-gray-300">
+          Already have an account? Log in
+        </p></Link>
       </form>
     </div>
   );

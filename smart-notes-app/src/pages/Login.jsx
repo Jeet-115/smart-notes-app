@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -51,9 +51,9 @@ export default function Login() {
         <button type="submit" className="w-full py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">
           Log In
         </button>
-        <p className="text-sm text-center text-gray-600 dark:text-gray-300">
-          Don't have an account? <a href="/signup" className="text-indigo-600 font-semibold">Sign up</a>
-        </p>
+        <Link to="/signup"><p className="text-sm text-center text-gray-600 dark:text-gray-300">
+          Don't have an account? Sign up
+        </p></Link>
       </form>
     </div>
   );
