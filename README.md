@@ -29,16 +29,6 @@ A modern, offline-first note-taking application built with React, Tailwind CSS, 
 
 ---
 
-## 📸 Screenshots
-
-![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)
-*Home Page*
-
-![Note Editor](https://via.placeholder.com/800x400.png?text=Note+Editor)
-*Note Editor*
-
----
-
 ## ⚙️ Installation
 
 Clone the repository:
