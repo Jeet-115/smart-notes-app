@@ -6,7 +6,13 @@ from routes import note_routes
 
 app = Flask(__name__)
 app.config.from_object(Config)
-CORS(app, origins="http://localhost:5173", supports_credentials=True)
+
+# ✅ Allow multiple origins:
+CORS(app, origins=[
+    "http://localhost:5173",
+    "https://smart-notes-app-jeet.vercel.app",
+    "https://smart-notes-app-gray.vercel.app"
+], supports_credentials=True)
 
 db.init_app(app)
 app.register_blueprint(note_routes, url_prefix="/api")
