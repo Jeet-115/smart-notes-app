@@ -14,7 +14,7 @@ export default function Signup() {
     setError("");
 
     try {
-      const res = await axios.post("https://smart-notes-app-vsea.onrender.com/api/signup", {
+      const res = await axios.post("http://localhost:5000/api/signup", {
         username,
         email,
         password,

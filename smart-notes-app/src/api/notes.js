@@ -1,10 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "https://smart-notes-app-vsea.onrender.com/api/notes" || "http://localhost:5000/api/notes";
-
-// Helper function to get the Authorization headers with token
+const BASE_URL = "http://localhost:5000/api/notes";
 const getAuthHeaders = () => {
-  const token = localStorage.getItem("token"); // adjust if you store it elsewhere
+  const token = localStorage.getItem("token");
   return {
     headers: {
       Authorization: `Bearer ${token}`,

@@ -13,7 +13,7 @@ export default function Login() {
     setError("");
 
     try {
-      const res = await axios.post("https://smart-notes-app-vsea.onrender.com/api/login", {
+      const res = await axios.post("http://localhost:5000/api/login", {
         email,
         password,
       });
